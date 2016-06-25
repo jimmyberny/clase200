@@ -24,12 +24,29 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jmiVentanaLeo = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Jose Bernardo");
 
         jLabel2.setText("Leonardo");
+
+        jMenu1.setText("Ventanas");
+
+        jmiVentanaLeo.setText("Leo");
+        jmiVentanaLeo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmiVentanaLeoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jmiVentanaLeo);
+
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -51,11 +68,16 @@ public class Ventana extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(55, 55, 55)
                 .addComponent(jLabel2)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jmiVentanaLeoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiVentanaLeoActionPerformed
+        FrameLeo fm = new FrameLeo();
+        fm.setVisible(true);
+    }//GEN-LAST:event_jmiVentanaLeoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -95,5 +117,8 @@ public class Ventana extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jmiVentanaLeo;
     // End of variables declaration//GEN-END:variables
 }
