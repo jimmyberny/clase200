@@ -40,8 +40,6 @@ public class FrameLeo extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(51, 255, 204));
         jLabel1.setText("Drcksl :)");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Matrix Red.jpg"))); // NOI18N
-
         jMenu1.setText("File");
 
         jMenuItem1.setText("Sorpresa !!");
